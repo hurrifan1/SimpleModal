@@ -1,5 +1,9 @@
 {
   "name": "SimpleModal",
-  "icon": "extension",
-  "preview": ""
+  "icon": "new-tab",
+  "preview": "",
+  "version": "1.0.0",
+  "description": "Simple modal button for Qlik Sense",
+  "author": "Austin Spivey",
+  "type": "visualization"
 }

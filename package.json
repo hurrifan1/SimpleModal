@@ -1,11 +1,11 @@
 {
   "name": "simplemodal",
   "version": "0.1.0",
-  "description": "",
+  "description": "Simple modal button for Qlik Sense",
   "license": "MIT",
   "author": {
     "name": "Austin Spivey",
-    "email": "holafake1@gmail.com"
+    "email": "austin@arcanalytics.us"
   },
   "keywords": ["qlik", "nebula", "stardust"],
   "files": ["dist"],

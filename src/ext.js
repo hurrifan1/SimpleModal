@@ -15,17 +15,10 @@ export default function ext(/* galaxy */) {
           type: "items",
           uses: "settings",
           items: {
-            MultiOptionsProp: {
+            ModalOptionsProp: {
               label: "Modal Settings",
               type: "items",
               items: {
-                ButtonLabelProp: {
-                  ref: "refButtonLabel",
-                  type: "string",
-                  label: "Button Label",
-                  expression: "optional",
-                  defaultValue: "Click me you dog"
-                },
                 ModalTitleProp: {
                   ref: "refModalTitle",
                   type: "string",
@@ -39,13 +32,6 @@ export default function ext(/* galaxy */) {
                   label: "Modal Body",
                   expression: "optional",
                   defaultValue: "I am a modal body!<br><br>Things are getting <b><i>wild</i></b> in here!"
-                },
-                ButtonFontSizeProp: {
-                  ref: "refButtonFontSize",
-                  type: "string",
-                  label: "Button Font Size",
-                  expression: "optional",
-                  defaultValue: "2em"
                 },
                 BlurCloseOnClickProp: {
                   ref: "refBlurCloseOnClick",
@@ -63,8 +49,28 @@ export default function ext(/* galaxy */) {
                 },
               },
             },
+            ButtonOptionsProp: {
+              label: "Button Settings",
+              type: "items",
+              items: {
+                ButtonLabelProp: {
+                  ref: "refButtonLabel",
+                  type: "string",
+                  label: "Button Label",
+                  expression: "optional",
+                  defaultValue: "Click me you dog"
+                },
+                ButtonFontSizeProp: {
+                  ref: "refButtonFontSize",
+                  type: "string",
+                  label: "Button Font Size",
+                  expression: "optional",
+                  defaultValue: "2em"
+                },
+              },
+            },
             BackgroundOptionsProp: {
-              label: "Background",
+              label: "Button Background",
               type: "items",
               items: {
                 BackgroundColorProp: {
@@ -101,7 +107,7 @@ export default function ext(/* galaxy */) {
               },
             },
             BorderOptionsProp: {
-              label: "Border",
+              label: "Button Border",
               type: "items",
               items: {
                 BorderToggleProp: {
@@ -121,7 +127,7 @@ export default function ext(/* galaxy */) {
                 BorderCornerRadiusProp: {
                   ref: "refBorderCornerRadius",
                   type: "string",
-                  label: "Corder radius",
+                  label: "Corner radius",
                   expression: "optional",
                   defaultValue: "4px",
                   show: lyt => lyt.refBorderToggle,

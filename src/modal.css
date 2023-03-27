@@ -15,7 +15,7 @@
     width: 100%;
     height: 100%;
     background-color: #00000073;
-    z-index: 99;
+    z-index: 1050;
     backdrop-filter: blur(5px);
     align-content: center;
     flex-wrap: wrap;
@@ -30,7 +30,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 100;
+    z-index: 1051;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -45,7 +45,7 @@
     width: 50%;
     height: 70%;
     background-color: white;
-    z-index: 101;
+    z-index: 1052;
     flex-direction: column;
     flex-wrap: nowrap;
     padding: 30px;
@@ -94,17 +94,17 @@
 } */
 
 /* ==== GET RID OF THE BORDER AND BACKGROUND COLOR OF THE QLIK INNER OBJECT */
-article.qv-object-SimpleModal div.qv-inner-object {
+article.qv-object-simplemodal div.qv-inner-object {
     padding: 0 !important;
     background-color: transparent !important;
     background: none !important;
 }
 
-article.qv-object.qvt-visualization.qv-object-SimpleModal {
+article.qv-object.qvt-visualization.qv-object-simplemodal {
     border: none !important;
 }
 
-article.qv-object-SimpleModal div.qv-inner-object.no-titles header {
+article.qv-object-simplemodal div.qv-inner-object.no-titles header {
     height: 0 !important;
 }
 

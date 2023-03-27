@@ -2,6 +2,8 @@
 
 SimpleModal is a very basic Qlik Sense extension with one purpose: To provide you with a button that displays a customizable modal.
 
+![GIF of basic usage of my SimpleModal extension for Qlik Sense](https://github.com/hurrifan1/AustinSite/blob/master/static/images/SimpleModal%20Extension%20-%20Overview%20GIF%201.gif)
+
 ## Why?
 
 I had a use case for one and I didn't like the options that were otherwise available to me. It was also a chance to learn how to create an extension. I had been wanting to dive into building one with Nebula so this was my opportunity.

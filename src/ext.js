@@ -58,7 +58,7 @@ export default function ext(/* galaxy */) {
                   type: "string",
                   label: "Button Label",
                   expression: "optional",
-                  defaultValue: "Click me you dog"
+                  defaultValue: "Show more info"
                 },
                 ButtonFontSizeProp: {
                   ref: "refButtonFontSize",
@@ -92,7 +92,7 @@ export default function ext(/* galaxy */) {
                   type: "object",
                   component: "color-picker",
                   defaultValue: {
-                    color: "ff5866",
+                    color: "3ea8ff",
                     index: "-1",
                   },
                   show: lyt => lyt.refBackgroundColor == "pick",

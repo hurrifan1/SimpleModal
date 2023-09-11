@@ -8,175 +8,175 @@ export default function ext(/* galaxy */) {
       viewData: true,
     },
     definition: {
-      type: "items",
-      component: "accordion",
+      type: 'items',
+      component: 'accordion',
       items: {
         appearancePanel: {
-          type: "items",
-          uses: "settings",
+          type: 'items',
+          uses: 'settings',
           items: {
             ModalOptionsProp: {
-              label: "Modal Settings",
-              type: "items",
+              label: 'Modal Settings',
+              type: 'items',
               items: {
                 ModalTitleProp: {
-                  ref: "refModalTitle",
-                  type: "string",
-                  label: "Modal Title",
-                  expression: "optional",
-                  defaultValue: "I am a modal title"
+                  ref: 'refModalTitle',
+                  type: 'string',
+                  label: 'Modal Title',
+                  expression: 'optional',
+                  defaultValue: 'I am a modal title',
                 },
                 ModalBodyProp: {
-                  ref: "refModalBody",
-                  type: "string",
-                  label: "Modal Body",
-                  expression: "optional",
-                  defaultValue: "I am a modal body!<br><br>Things are getting <b><i>wild</i></b> in here!"
+                  ref: 'refModalBody',
+                  type: 'string',
+                  label: 'Modal Body',
+                  expression: 'optional',
+                  defaultValue: 'I am a modal body!<br><br>Things are getting <b><i>wild</i></b> in here!',
                 },
                 BlurCloseOnClickProp: {
-                  ref: "refBlurCloseOnClick",
-                  type: "boolean",
-                  component: "switch",
-                  label: "Click outside to close",
+                  ref: 'refBlurCloseOnClick',
+                  type: 'boolean',
+                  component: 'switch',
+                  label: 'Click outside to close',
                   options: [{
                     value: true,
-                    label: "On"
+                    label: 'On',
                   }, {
                     value: false,
-                    label: "Off"
+                    label: 'Off',
                   }],
-                  defaultValue: true
+                  defaultValue: true,
                 },
               },
             },
             ButtonOptionsProp: {
-              label: "Button Settings",
-              type: "items",
+              label: 'Button Settings',
+              type: 'items',
               items: {
                 ButtonLabelProp: {
-                  ref: "refButtonLabel",
-                  type: "string",
-                  label: "Button Label",
-                  expression: "optional",
-                  defaultValue: "Show more info"
+                  ref: 'refButtonLabel',
+                  type: 'string',
+                  label: 'Button Label',
+                  expression: 'optional',
+                  defaultValue: 'Show more info',
                 },
                 ButtonFontSizeProp: {
-                  ref: "refButtonFontSize",
-                  type: "string",
-                  label: "Button Font Size",
-                  expression: "optional",
-                  defaultValue: "2em"
+                  ref: 'refButtonFontSize',
+                  type: 'string',
+                  label: 'Button Font Size',
+                  expression: 'optional',
+                  defaultValue: '2em',
                 },
               },
             },
             BackgroundOptionsProp: {
-              label: "Button Background",
-              type: "items",
+              label: 'Button Background',
+              type: 'items',
               items: {
                 BackgroundColorProp: {
-                  ref: "refBackgroundColor",
-                  type: "string",
-                  component: "dropdown",
-                  label: "Background color",
+                  ref: 'refBackgroundColor',
+                  type: 'string',
+                  component: 'dropdown',
+                  label: 'Background color',
                   options: [{
-                    value: "pick",
-                    label: "Single color"
+                    value: 'pick',
+                    label: 'Single color',
                   }, {
-                    value: "expr",
-                    label: "By expression"
+                    value: 'expr',
+                    label: 'By expression',
                   }],
-                  defaultValue: "pick",
+                  defaultValue: 'pick',
                 },
                 BackgroundColorPickerProp: {
-                  ref: "refBackgroundColorPicker",
-                  type: "object",
-                  component: "color-picker",
+                  ref: 'refBackgroundColorPicker',
+                  type: 'object',
+                  component: 'color-picker',
                   defaultValue: {
-                    color: "3ea8ff",
-                    index: "-1",
+                    color: '3ea8ff',
+                    index: '-1',
                   },
-                  show: lyt => lyt.refBackgroundColor == "pick",
+                  show: lyt => lyt.refBackgroundColor == 'pick',
                 },
                 BackgroundColorExpressionProp: {
-                  ref: "refBackgroundColorExpression",
-                  type: "string",
-                  expression: "optional",
-                  defaultValue: "",
-                  show: lyt => lyt.refBackgroundColor == "expr",
+                  ref: 'refBackgroundColorExpression',
+                  type: 'string',
+                  expression: 'optional',
+                  defaultValue: '',
+                  show: lyt => lyt.refBackgroundColor == 'expr',
                 },
               },
             },
             BorderOptionsProp: {
-              label: "Button Border",
-              type: "items",
+              label: 'Button Border',
+              type: 'items',
               items: {
                 BorderToggleProp: {
-                  ref: "refBorderToggle",
-                  type: "boolean",
-                  component: "switch",
-                  label: "Show border",
+                  ref: 'refBorderToggle',
+                  type: 'boolean',
+                  component: 'switch',
+                  label: 'Show border',
                   options: [{
                     value: true,
-                    label: "On"
+                    label: 'On',
                   }, {
                     value: false,
-                    label: "Off"
+                    label: 'Off',
                   }],
-                  defaultValue: false
+                  defaultValue: false,
                 },
                 BorderCornerRadiusProp: {
-                  ref: "refBorderCornerRadius",
-                  type: "string",
-                  label: "Corner radius",
-                  expression: "optional",
-                  defaultValue: "4px",
+                  ref: 'refBorderCornerRadius',
+                  type: 'string',
+                  label: 'Corner radius',
+                  expression: 'optional',
+                  defaultValue: '4px',
                   show: lyt => lyt.refBorderToggle,
                 },
                 BorderWidthProp: {
-                  ref: "refBorderWidth",
-                  type: "string",
-                  label: "Border width",
-                  expression: "optional",
-                  defaultValue: "3px",
+                  ref: 'refBorderWidth',
+                  type: 'string',
+                  label: 'Border width',
+                  expression: 'optional',
+                  defaultValue: '3px',
                   show: lyt => lyt.refBorderToggle,
                 },
                 BorderColorProp: {
-                  ref: "refBorderColor",
-                  type: "string",
-                  component: "dropdown",
-                  label: "Border color",
+                  ref: 'refBorderColor',
+                  type: 'string',
+                  component: 'dropdown',
+                  label: 'Border color',
                   options: [{
-                    value: "pick",
-                    label: "Single color"
+                    value: 'pick',
+                    label: 'Single color',
                   }, {
-                    value: "expr",
-                    label: "By expression"
+                    value: 'expr',
+                    label: 'By expression',
                   }],
-                  defaultValue: "pick",
+                  defaultValue: 'pick',
                   show: lyt => lyt.refBorderToggle,
                 },
                 BorderColorPickerProp: {
-                  ref: "refBorderColorPicker",
-                  type: "object",
-                  component: "color-picker",
+                  ref: 'refBorderColorPicker',
+                  type: 'object',
+                  component: 'color-picker',
                   defaultValue: {
-                    color: "ff5866",
-                    index: "-1",
+                    color: 'ff5866',
+                    index: '-1',
                   },
-                  show: lyt => lyt.refBorderToggle && lyt.refBorderColor == "pick",
+                  show: lyt => lyt.refBorderToggle && lyt.refBorderColor == 'pick',
                 },
                 BorderColorExpressionProp: {
-                  ref: "refBorderColorExpression",
-                  type: "string",
-                  expression: "optional",
-                  defaultValue: "",
-                  show: lyt => lyt.refBorderToggle && lyt.refBorderColor == "expr",
+                  ref: 'refBorderColorExpression',
+                  type: 'string',
+                  expression: 'optional',
+                  defaultValue: '',
+                  show: lyt => lyt.refBorderToggle && lyt.refBorderColor == 'expr',
                 },
               },
             },
-          }
-        }
-      }
+          },
+        },
+      },
     },
   }
 }

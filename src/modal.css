@@ -60,11 +60,12 @@
     margin-bottom: 1em;
 }
 
-.simplemodal-body-text {
+.simplemodal-body-content {
     height: 80%;
     overflow-y: auto;
     margin-bottom: 10px;
     padding-right: 5px;
+    list-style-position: inside;
 }
 
 .simplemodal-toggle-button {

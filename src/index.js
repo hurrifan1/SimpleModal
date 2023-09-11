@@ -37,7 +37,7 @@ export default function supernova(galaxy) {
         <div class="simplemodal-background-blur" id="ext-simplemodal-blur">
           <div class="simplemodal-obj">
             <h1 class="simplemodal-title">${layout.refModalTitle}</h1>
-            <p class="simplemodal-body-text">${layout.refModalBody}</p>
+            <div class="simplemodal-body-content">${layout.refModalBody}</div>
             <div class="simplemodal-inner-button" id="ext-simplemodal-inner-button">
               <p class="simplemodal-inner-button-text">Close</p>
             </div>
